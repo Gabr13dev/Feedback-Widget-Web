@@ -1,5 +1,4 @@
 import html2canvas from "html2canvas";
-import { backgroundImage } from "html2canvas/dist/types/css/property-descriptors/background-image";
 import { Camera, Trash } from "phosphor-react";
 import { useState } from "react";
 import { Loading } from "./Loading";
@@ -27,7 +26,7 @@ export function ScreenshootButton(
         return (
             <button
                 type="button"
-                className="padding-1 w-10 h-10 roudend-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 transition-colors"
+                className="p-1 w-10 h-10 rounded-md border-transparent flex justify-end items-end text-zinc-400 hover:text-zinc-100 transition-colors"
                 style={{
                     backgroundImage: `url(${screenShoot})`,
                     backgroundPosition: "right bottom",
